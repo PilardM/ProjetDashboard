@@ -1,0 +1,206 @@
+body {
+  font-family: Arial, sans-serif;
+	background-color: #f4f4f4;
+	margin: 0;
+	padding: 0;
+}
+
+#dashboard-description {
+  padding: 0px 0px 0px 30px;
+}
+
+#dashboard {
+  background: #F4F4F4;
+  display : flex;
+  flex-direction: column;
+  padding: 20px;
+  position : relative;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+#block-container {
+  padding: 20px;
+}
+
+.block {
+  background: #FFFFFF;
+  border-radius: 35px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: left;
+  align-items: left;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 44px;
+}
+
+.blockGround .edit-blockGround{
+  background: #F4F4F4;
+}
+
+.edit-blockGround {
+  cursor: move;
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}
+
+#var.edit-variable {
+  cursor: move;
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}
+
+.edit-blockGround:active {
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}
+
+#var.edit-variable:active {
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}
+
+.enteteblock{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.titreblock{
+  font : oblique 18px Arial, Helvetica, sans-serif; 
+  color: black;
+  padding : 20px;
+}
+
+#var {
+  background: #FFFFFF;
+  border-radius: 72px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+input.inputVar {
+  padding: 15px;
+}
+
+div.titreVar{
+  padding : 10px;
+}
+.second-header{
+  display: flex;
+  align-items: center;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+h2{
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  padding: 0px 30px 0 30px;
+  color: #26394C;
+}
+
+form {
+  padding: 0px 30px 0 30px;
+}
+
+.drag-instructions {
+  padding : 0px 30px 0px 30px;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-size: 20px;
+}
+.switch {
+  position: relative;
+  display: inline-blockk;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.documentation-link {
+  padding : 20px;
+}
+
+.view {
+  padding : 20px;
+}
